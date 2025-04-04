@@ -1,0 +1,76 @@
+python train.py --label_nc 0 --no_instance --name dental-pix2pix-split --dataroot ./datasets/dental --save_epoch_freq 5
+
+
+python test.py --name dental-pix2pix-split --dataroot ./datasets/dental --no_instance --label_nc 0
+
+
+
+
+
+
+
+python train.py --label_nc 0 --no_instance --name combined-4datasets06112022 --dataroot ./datasets/combined --save_epoch_freq 5
+
+
+python test.py --name combined-4datasets06112022 --dataroot ./datasets/combined --no_instance --label_nc 0 --how_many 30
+
+
+
+# continue training
+python train.py --label_nc 0 --no_instance --name combined-4datasets06112022 --dataroot ./datasets/combined --save_epoch_freq 5 --continue_train
+
+
+
+
+
+
+
+
+python train.py --label_nc 0 --no_instance --name combined07152021-5datasets --dataroot ./datasets/combined07152021 --save_epoch_freq 5
+
+
+python test.py --name combined07152021-5datasets --dataroot ./datasets/combined07152021 --no_instance --label_nc 0 --how_many 144
+
+
+
+# continue training
+python train.py --label_nc 0 --no_instance --name combined07152021-5datasets --dataroot ./datasets/combined07152021 --save_epoch_freq 5 --continue_train
+
+
+
+
+
+
+
+python train.py --label_nc 0 --no_instance --name combined05222022-5datasets --dataroot ./datasets/combined05222022 --save_epoch_freq 5
+
+
+python test.py --name combined05222022-5datasets --dataroot ./datasets/combined05222022 --no_instance --label_nc 0 --how_many 146
+
+
+
+# continue training
+python train.py --label_nc 0 --no_instance --name combined05222022-5datasets --dataroot ./datasets/combined05222022 --save_epoch_freq 5 --continue_train
+
+
+
+
+
+
+
+python train.py --label_nc 0 --no_instance --name combined07162022 --dataroot ./datasets/combined07162022 --save_epoch_freq 5
+
+
+python test.py --name combined07162022 --dataroot ./datasets/combined07162022 --no_instance --label_nc 0 --how_many 2
+
+
+
+# continue training
+python train.py --label_nc 0 --no_instance --name combined07162022 --dataroot ./datasets/combined07162022 --save_epoch_freq 5 --continue_train
+
+
+
+python train.py --label_nc 0 --no_instance --name dental-dataset --dataroot ./datasets/DentalCBCT --save_epoch_freq 5
+
+
+python test.py --name combined05222022-5datasets --dataroot ./datasets/DentalCBCT --no_instance --label_nc 0 --how_many 146
