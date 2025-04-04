@@ -6,6 +6,10 @@ This project uses [pix2pixHD](https://tcwang0509.github.io/pix2pixHD/) to enhanc
 
 Low-dose CBCT (Cone Beam Computed Tomography) is desirable in dental applications to reduce radiation exposure to patients. However, lower radiation often results in lower image quality with increased noise and reduced clarity. This project aims to generate high-quality, sharp images from ultra-low-dose CBCT scans using deep learning-based image-to-image translation.
 
+## Example Results
+
+![Dental Image Enhancement Example](imgs/dental.jpg)
+
 ## Dataset Structure
 
 The dataset should be organized in the following structure:
